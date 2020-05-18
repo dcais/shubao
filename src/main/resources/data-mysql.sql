@@ -1,0 +1,1 @@
+set collation_connection=utf8mb4_general_ci;

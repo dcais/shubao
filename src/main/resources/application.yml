@@ -1,0 +1,44 @@
+security:
+  oauth2:
+    client:
+      client-id: clientId
+      client-secret: clientSecret
+      scope: scope1, scope2, scope3, scope4
+      registered-redirect-uri: http://www.baidu.com
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  datasource:
+    url: jdbc.url= jdbc:mysql://ip:port/xxxx?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&useSSL=false
+    username: #
+    password: #
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    data: classpath:data-mysql.sql
+    hikari:
+      connection-init-sql: set collation_connection=utf8mb4_general_ci
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSSZZ
+    time-zone: GMT+8
+
+mybatis:
+  mapper-locations: 'classpath:/mapper/**/*.xml'
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: is_deleted
+      logic-delete-value: Y # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: N # 逻辑未删除值(默认为 0)
+      table-prefix: shubao_
+
+logging:
+  level:
+    root: INFO
+    com.ibatis: DEBUG
+    java.sql: DEBUG
+    org.dcais.shubao.shubao.mapper: DEBUG
+  pattern:
+    file: "[%d{'MM-dd HH:mm:ss,SSS',GMT+8:00}] %-5p [%.10t][%X{IP}][%X{OP}] %logger{36}[%L] - %m%n"
