@@ -1,10 +1,7 @@
 package org.dcais.shubao.shubao.mapper;
 
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import org.dcais.shubao.shubao.entity.ClientDetail;
-import org.dcais.shubao.shubao.entity.User;
-import org.dcais.shubao.shubao.mapper.ClientDetailMapper;
-import org.dcais.shubao.shubao.mapper.UserMapper;
+import org.dcais.shubao.shubao.entity.client.ClientDetail;
+import org.dcais.shubao.shubao.mapper.client.ClientDetailMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

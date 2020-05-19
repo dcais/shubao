@@ -1,7 +1,7 @@
-package org.dcais.shubao.shubao.service;
+package org.dcais.shubao.shubao.service.user;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.dcais.shubao.shubao.entity.User;
+import org.dcais.shubao.shubao.entity.user.User;
 
 /**
  * <p>

@@ -1,13 +1,12 @@
 package org.dcais.shubao.shubao.mapper;
 
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import org.dcais.shubao.shubao.entity.User;
-import org.dcais.shubao.shubao.mapper.UserMapper;
+import org.dcais.shubao.shubao.entity.user.User;
+import org.dcais.shubao.shubao.mapper.user.UserMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Profile;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 

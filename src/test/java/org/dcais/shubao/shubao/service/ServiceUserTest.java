@@ -2,17 +2,14 @@ package org.dcais.shubao.shubao.service;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.dcais.shubao.shubao.entity.ClientDetail;
-import org.dcais.shubao.shubao.entity.User;
-import org.junit.Assert;
+import org.dcais.shubao.shubao.entity.user.User;
+import org.dcais.shubao.shubao.service.user.IUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,9 +1,9 @@
-package org.dcais.shubao.shubao.service.impl;
+package org.dcais.shubao.shubao.service.user.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.dcais.shubao.shubao.entity.User;
-import org.dcais.shubao.shubao.mapper.UserMapper;
-import org.dcais.shubao.shubao.service.IUserService;
+import org.dcais.shubao.shubao.entity.user.User;
+import org.dcais.shubao.shubao.mapper.user.UserMapper;
+import org.dcais.shubao.shubao.service.user.IUserService;
 import org.springframework.stereotype.Service;
 
 /**

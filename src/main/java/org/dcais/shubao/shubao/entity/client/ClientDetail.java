@@ -1,9 +1,10 @@
-package org.dcais.shubao.shubao.entity;
+package org.dcais.shubao.shubao.entity.client;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.dcais.shubao.shubao.entity.BaseEntity;
 
 /**
  * <p>

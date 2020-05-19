@@ -1,7 +1,7 @@
-package org.dcais.shubao.shubao.mapper;
+package org.dcais.shubao.shubao.mapper.client;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.dcais.shubao.shubao.entity.ClientDetail;
+import org.dcais.shubao.shubao.entity.client.ClientDetail;
 
 /**
  * <p>
