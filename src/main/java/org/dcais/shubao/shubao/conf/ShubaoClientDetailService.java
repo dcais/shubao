@@ -13,6 +13,7 @@ import org.springframework.security.oauth2.provider.client.BaseClientDetails;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
@@ -33,7 +34,7 @@ public class ShubaoClientDetailService implements ClientDetailsService {
                 cd.getScope(),
                 cd.getAuthorizedGrantTypes(),
                 cd.getAuthorities(),
-                cd.getResourceIds()
+                cd.getWebServerRedirectUri()
         );
         baseClientDetails.setClientSecret(cd.getClientSecret());
         baseClientDetails.setAccessTokenValiditySeconds(cd.getAccessTokenValidity());

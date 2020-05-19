@@ -21,9 +21,9 @@ import org.dcais.shubao.shubao.entity.BaseEntity;
 public class UserRole extends BaseEntity {
 
 
-    private Integer userId;
+    private Long userId;
 
-    private Integer roleId;
+    private Long roleId;
 
 
 }

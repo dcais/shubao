@@ -23,7 +23,7 @@ public class ServiceUserTest {
     @Test
     public void testPagenation() {
         Page<User> page = new Page<>(1, 3);
-        Page<User> result = iUserService.page(page, Wrappers.<User>lambdaQuery().gt(User::getAge, 1).orderByAsc(User::getAge));
+        Page<User> result = iUserService.page(page, Wrappers.<User>lambdaQuery().gt(User::getId, 1).orderByAsc(User::getId));
         assertThat(result.getTotal()).isGreaterThan(3);
         assertThat(result.getRecords().size()).isEqualTo(3);
     }

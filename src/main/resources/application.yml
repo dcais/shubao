@@ -1,16 +1,16 @@
-security:
-  oauth2:
-    client:
-      client-id: clientId
-      client-secret: clientSecret
-      scope: scope1, scope2, scope3, scope4
-      registered-redirect-uri: http://www.baidu.com
+#security:
+#  oauth2:
+#    client:
+#      client-id: clientId
+#      client-secret: clientSecret
+#      scope: scope1, scope2, scope3, scope4
+#      registered-redirect-uri: http://www.baidu.com
 
 spring:
-  security:
-    user:
-      name: admin
-      password: admin
+#  security:
+#    user:
+#      name: admin
+#      password: admin
   datasource:
     url: jdbc.url= jdbc:mysql://ip:port/xxxx?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&useSSL=false
     username: #

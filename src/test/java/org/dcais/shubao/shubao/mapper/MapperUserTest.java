@@ -36,6 +36,6 @@ public class MapperUserTest {
     @Test
     public void testUpdate() {
         User user = new User();
-        userMapper.update(user, new UpdateWrapper<User>().lambda().eq(User::getId,2).set(User::getAge,10));
+        userMapper.update(user, new UpdateWrapper<User>().lambda().eq(User::getId,2).set(User::getId,10));
     }
 }
